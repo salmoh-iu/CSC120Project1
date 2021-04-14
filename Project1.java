@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-   public class Project1 {
+public class Project1 {
    
    public static void main(String[] args) {
    
@@ -30,10 +30,10 @@ import java.util.Scanner;
       
       System.out.print("Please enter the clock speed (in Megahertz) of your graphics card: ");
       graphicSpeed = keyboard.nextInt();
-
+   
       System.out.print("Please enter the clock speed (in Megahertz) of your processor: ");
       processorSpeed = keyboard.nextInt();
-
+   
       System.out.print("Please enter the number of cores of your processor: ");
       numCore = keyboard.nextInt();
       multiplierNum = keyboard.nextLine();
@@ -51,6 +51,8 @@ import java.util.Scanner;
       
       //performance score 
       performanceScore = ((5 * graphicSpeed) + (numCore * processorSpeed)) * MULTIPLIER_VALUE1;
+   
+   
      
       
       System.out.printf("\n%s\n", name);
@@ -78,43 +80,43 @@ import java.util.Scanner;
             {
                System.out.println("\nMonitor Resultion: 3840 x 2160");
             }
-     }
-   }             
-{        
+         }
+      }             
+      {        
         
-        if (performanceScore > 17000)
-        {
-            System.out.printf("\nPerformance Score: %.3f\n", performanceScore);  
+         if (performanceScore > 17000)
+         {
+            System.out.printf("\nPerformance Score: %,.3f\n", performanceScore);  
             System.out.println("\nRecommended Graphics Quality: Ultra");   
-        }
-        else 
-        {
+         }
+         else 
+         {
             if (performanceScore > 15000 && performanceScore <= 17000) 
             {
-               System.out.printf("\nPerformance Score: %.3f\n", performanceScore); 
+               System.out.printf("\nPerformance Score: %,.3f\n", performanceScore); 
                System.out.print("\nRecommended Graphics Quality:  High");
             }
             else
             {
                if (performanceScore > 13000 && performanceScore <= 15000)
                {
-                  System.out.printf("\nPerformance Score: %.3f\n", performanceScore);
+                  System.out.printf("\nPerformance Score: %,.3f\n", performanceScore);
                   System.out.println("\nRecommended Graphics Quality: Medium"); 
                }
                else            
                {
                   if (performanceScore > 11000 && performanceScore <= 13000)
                   {
-                     System.out.printf("\nPerformance Score: %.3f\n", performanceScore);
+                     System.out.printf("\nPerformance Score: %,.3f\n", performanceScore);
                      System.out.println("\nRecommended Graphics Quality: Low");  
                   }
                   else
                   {
-                     System.out.printf("\nPerformance Score: %.3f\n", performanceScore);
+                     System.out.printf("\nPerformance Score: %,.3f\n", performanceScore);
                      System.out.print("\nRecommended Graphics Quality: Unable to Play\n ");
                   }
-                }
-             }
+               }
+            }
          } 
       }
    }
